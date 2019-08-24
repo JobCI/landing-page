@@ -1,5 +1,13 @@
 # landing-page
 
+## Configuring
+
+`config.py` file is required, should look like:
+```
+DEBUG = True # or False
+HOST = ["0.0.0.0"] # or []
+```
+
 ## Tempalte credits
 
 **Dimension by HTML5 UP**

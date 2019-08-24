@@ -126,3 +126,4 @@ dmypy.json
 # custom
 log
 .vscode/
+config.py
