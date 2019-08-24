@@ -6,8 +6,12 @@ app = Flask(__name__)
 try:
     app.config.from_pyfile('config.py')
     host = app.config['HOST']
+    debug = app.config['DEBUG']
+    port = app.config['PORT']
 except Exception:
     host = []
+    debug = True
+    port = 8000
 
 @app.route('/')
 def index():
@@ -18,4 +22,4 @@ def send_js(filename):
     return send_from_directory(filename, static_url_path='static')
 
 if __name__ == '__main__':
-    app.run(*host)
+    app.run(*host, debug=debug, port=port)
