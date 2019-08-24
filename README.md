@@ -2,11 +2,24 @@
 
 ## Configuring
 
-`config.py` file is required, should look like:
+- Create virtual environment and install `requirements.txt`
+```
+$ virtualenv -p python3 env
+$ . env/bin/activate
+(env) $ pip install -r requirements.txt
+```
+
+- `config.py` file is required, should look like:
 ```
 DEBUG = True # or False
 HOST = ["0.0.0.0"] # or []
 ```
+
+## Run
+
+- start service: `zdaemon -p "python app.py" -d -f start`
+
+- stop service: `zdaemon -p "python app.py" stop`
 
 ## Tempalte credits
 
