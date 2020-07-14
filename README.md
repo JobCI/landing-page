@@ -21,7 +21,7 @@ HOST = ["0.0.0.0"] # or []
 
 - stop service: `zdaemon -p "python app.py" stop`
 
-## Tempalte credits
+## Template credits
 
 **Dimension by HTML5 UP**
 html5up.net | @ajlkn
